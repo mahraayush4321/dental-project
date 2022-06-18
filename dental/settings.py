@@ -28,7 +28,7 @@ SECRET_KEY = 'django-insecure-2tn-7eb59r9r3s&#z8_i8p48e=ga-c#n3k6@1at(3=oid^x$uu
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['young-caverns-99603.heroku.com','127.0.0.1']
 
 
 # Application definition
@@ -60,7 +60,7 @@ ROOT_URLCONF = 'dental.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ['templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -148,4 +148,3 @@ EMAIL_USE_TLS = False
 
 django_heroku.settings(locals())
 
-STATICFILES_STORAGE = 'whitenoise.storage.CompressManifestStaticFilesStorage'
